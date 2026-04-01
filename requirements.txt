@@ -1,0 +1,23 @@
+# ── Python version ────────────────────────────────────────────────────────────
+# Requires Python 3.11.x  (3.14 is NOT supported by torch/numpy yet)
+
+# ── Core ──────────────────────────────────────────────────────────────────────
+streamlit>=1.35.0
+
+# ── Data ──────────────────────────────────────────────────────────────────────
+pandas>=2.0.0
+numpy>=1.26.0
+
+# ── NLP / ML ──────────────────────────────────────────────────────────────────
+transformers>=4.40.0
+torch>=2.2.0                # CPU build; swap for torch+cu121 for CUDA GPU support
+datasets>=2.19.0            # HuggingFace datasets library
+scikit-learn>=1.4.0         # accuracy_score, f1_score, train_test_split
+sentencepiece>=0.1.99       # Required by many BERT/DistilBERT tokenisers
+accelerate>=0.29.0          # Required by HuggingFace Trainer
+
+# ── Visualisation ─────────────────────────────────────────────────────────────
+plotly>=5.20.0
+
+# ── YouTube API ───────────────────────────────────────────────────────────────
+google-api-python-client>=2.120.0
